@@ -1,26 +1,64 @@
 @import url(./normalize.css);
 @import url(./reset.css);
 
-
+/* 본문 스타일 */
 body {
   background:#ffc;
+  /* Issue 대비를 위해 마지막은... sans-serif */
   font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+
+}
+
+/* 레이아웃 */
+/* selector grouping */
+.header, .visual, .main, .slogan, .footer-inner {
+  width: 940px;
+  box-sizing: border-box;
+  /* content-box = width + padding + border + margin */
+  /* border-box = (width + padding + border) + margin */
+  margin: 0 auto;
+  /* margin에만 존재하는 auto 키워드 , 남는 크기에 대해 왼쪽, 오른쪽을 기준으로 나뉘어진다.*/
   
 }
 
+/* 헤더 */
+/* vh는 브라우저의 비율에 따라 달라진다. */
 .header {
   background: pink;
+  padding: 0 30px;
+  /*
+  shotend 표기법
+  , 0 -> 위 아래 , 30-> 왼쪽 오른쪽
+  top을 기준으로 시계방향 
+  */
+  height: 15vh;
 }
+
+/* 비주얼 */
 .visual {
   background: orange;
+  height: 10vh;
 }
+
+/* 메인 */
 .main {
   background: lightgreen;
+  height: 50vh;
 }
+
+/* 슬로건 */
 .slogan {
   background: skyblue;
+  height: 10vh;
 }
+
+/* 푸터 */
 .footer {
   background: gray
+}
+
+.footer-inner {
+  background: silver;
+  height: 15vh;
 }
 
