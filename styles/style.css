@@ -65,11 +65,16 @@ body {
 
 /* 푸터 */
 .footer {
-  background: gray
+  background: gray;
+  width: 940px;
+  margin: 0 auto;
 }
 
 .footer-inner {
   background: silver;
   height: 15vh;
+  position: relative;
+  top: -10px;
+  left: -10px;
 }
 
