@@ -31,7 +31,7 @@ body {
   /* em, rem 단위를 사용해보자 */
   font-size: 1.4rem;
   color: #212121;
-  background:#ccc;
+  background:#ccc linear-gradient(to bottom, #ccc 0%, #eee 35%, #fff 70%, #fff 100%);
   font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
@@ -93,9 +93,12 @@ body {
 }
 
 /* 메인 메뉴 */
+
+.navigation {
+  padding-bottom: 80px;
+}
 .menu {
-  background-color: orangered;
-  /* background-image: linear-gradient(orange,orangered,orange); */
+  border-top: 4px solid currentColor;
   background: #e85e2c
     linear-gradient(
       to bottom,
@@ -104,7 +107,32 @@ body {
       #e85e2c 70%,
       #ef9126 100%
     );
+  border-radius: 0 0 5px 5px;
+  display: flow-root;
+  padding-left: 230px;
 }
+
+/* double margin float bug */
+/* .menu-item:first-child {
+  margin-left: 230px;
+} */
+
+.menu-item {
+  background-color: aqua;
+  float: left;
+  
+  /*  overflow:hidden;
+      display:flow-root;
+  */
+}
+
+.sub-menu{
+  background-color: pink;
+  position: absolute;
+  display: none;
+}
+
+
 
 /* 비주얼 */
 .visual {
@@ -149,7 +177,7 @@ body {
 
 /* 푸터 */
 .footer {
-  background: gray
+  background:#ccc linear-gradient(to bottom, #ccc 0%, #eee 35%, #fff 70%, #fff 100%);
 }
 
 .footer-inner {
