@@ -110,6 +110,11 @@ body {
   border-radius: 0 0 5px 5px;
   height: 47px;
   padding-left: 230px;
+  position: relative;
+}
+
+.menu > li:nth-child(-n + 3) {
+  position: relative;
 }
 
 /* .menu li {
@@ -118,7 +123,7 @@ body {
 
 .menu-item {
   /* background-color: aqua; */
-  position: relative;
+  /* position: relative; */
   float: left;
   border-left: 2px solid #fff;
 }
@@ -150,18 +155,29 @@ body {
 .sub-menu{
   background-color: pink;
   position: absolute;
-  left: 0;
+  /* left: 0; */
   top: 47px;
   display: none;
 }
 
+.menu-html, .menu-css, .menu-standard {
+  left: 0;
+}
+
+.menu-accessibility, .menu-qan, .menu-archive{
+  right: 0;
+}
+
 .is-active .sub-menu {
   display: block;
+  /* 공백문자를 줄바꿈의 이유가 되지 않게 만들기 */
+  white-space: nowrap;
 }
 
 .sub-menu li {
   display: inline-block;
   padding-left: 1em;
+  background-color: gold;
 }
 
 
