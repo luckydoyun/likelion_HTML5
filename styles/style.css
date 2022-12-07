@@ -112,13 +112,14 @@ body {
   padding-left: 230px;
 }
 
-.menu li {
+/* .menu li {
   float: left;
-}
+} */
 
 .menu-item {
   /* background-color: aqua; */
-  /* float: left; */
+  position: relative;
+  float: left;
   border-left: 2px solid #fff;
 }
 
@@ -149,11 +150,18 @@ body {
 .sub-menu{
   background-color: pink;
   position: absolute;
+  left: 0;
+  top: 47px;
   display: none;
 }
 
 .is-active .sub-menu {
   display: block;
+}
+
+.sub-menu li {
+  display: inline-block;
+  padding-left: 1em;
 }
 
 
