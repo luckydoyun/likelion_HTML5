@@ -341,7 +341,7 @@ body {
 }
 
 .login-form {
-  background-color: #ccc;
+  background-color: #fff;
   margin-top: 10px;
   border-radius: 5px 5px 0 0;
   padding: 10px 10px 0 10px;
@@ -349,26 +349,25 @@ body {
 
 .login-form fieldset {
   position: relative;
+  border-bottom: 1px solid #aaa;
+  padding-bottom: 5px;
 }
 
-.user-email {
-  background-color: skyblue;
-}
-
-.user-pw {
-  background-color: greenyellow;
+.user-email, .user-pw {
+  margin-bottom: 5px;
+  /* background-color: skyblue; */
 }
 
 .login-form label {
   display: inline-block;
-  background-color: salmon;
+  /* background-color: salmon; */
   width: 4em;
 }
 
 .login-form input {
   background-color: antiquewhite;
   border: 1px solid rgba(170, 170, 170, 0.646);
-  border-radius: 5px 5px 5px 5px;
+  border-radius: 3px;
   padding-left: 10px;
   width: 90px;
   height: 24px;
@@ -376,13 +375,19 @@ body {
 
 .login-button {
   position: absolute;
-  height: 50px;
+  height: 53px;
   top: 0;
   right: 0;
+  background-color: orangered;
+  color: white;
+  border: 0;
+  padding: 0 8px;
+  border-radius: 5px;
+  font-size: 13px;
 }
 
 .sign {
-  background-color: #ccc;
+  background-color: #fff;
   border-radius: 0 0 5px 5px;
   padding: 0 10px 10px 10px;
 }
