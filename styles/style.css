@@ -433,22 +433,21 @@ body {
 
 /* 유효성 검사 배너 */
 .validation-list {
-  /* background-color: yellow; */
   margin-top: 25px;
 }
 .validation-list li {
-  /* background-color: pink; */
   margin-top: 10px;
 }
 
 .validation-list a {
   background: url("./images/validation_icon.png") no-repeat 10% 50%,#ccc linear-gradient(to bottom, #ccc 20%, #fff 100%);
   border-radius: 15px;
-  border: 1px solid #ccc;
+  border: 2px solid #ccc;
+  /* display: flex; */
   display: block;
-  /* height: 30px; */
-  /* text-align: center; */
-  padding: 8px 15px 8px 45px;
+
+  margin-top: 15px;
+  padding: 8px 15px 8px 50px;
 }
 .validation-list a:hover,
 .validation-list a:focus {
